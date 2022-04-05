@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Captain America Sheild</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 62.5%;
+        
+    }
+    body{
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle{
+        width: 40rem;   
+        height: 40rem;
+        border-radius: 50%;
+        background-color: rgb(245, 234, 234);
+        box-shadow: 0 0 0 5rem red;
+        position: relative;
+    }
+    .center{
+        width: 20rem;   
+        height: 20rem;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 0 0 5rem red;
+        position: absolute;
+        left: 10rem;
+        top: 9rem;
+    }
+    .arrow{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0rem;
+        height: 0rem;
+        border: 9rem solid transparent;
+        border-top: 8rem solid white;
+    }
+    .arrow:first-child{
+        top: 5.5rem;
+        left: 1em;
+        border-top-color: blue;
+    }
+
+     .arrow:nth-child(2){
+        left: -3.4rem;
+        top: 3.5em;
+        transform: rotate(68deg);
+        border-top-color: blue;
+
+    }    
+    .arrow:nth-child(3){
+        top: 3.5rem;
+        left: 5.7em;
+        transform: rotate(-68deg);
+        border-top-color: blue;
+
+    } 
+
+
+
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="center">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
