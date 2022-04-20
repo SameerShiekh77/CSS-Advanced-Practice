@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgba(25, 151, 151, 0.931);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #073668;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+a::before {
+    content: 'SAMTECH ENVELOP';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: purple;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+
+a:hover::before {
+    transform: rotateX(0deg);
+}
+
+a::after {
+    content: 'SAMTECH ENVELOP';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: green;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    transition: all 0.5s;
+    transition-delay: 0.3s;
+}
+
+a:hover::after {
+    transform: rotateX(0deg);
+}

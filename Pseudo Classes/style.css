@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* unvisited link color will be red */
+
+a:link {
+    color: red;
+}
+
+
+/* visited link color will be purple */
+
+a:visited {
+    color: purple;
+}
+
+
+/* if your cursor on link then color of link is white */
+
+a:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* when you click on the link then appear this color */
+
+a:active {
+    color: royalblue;
+}
