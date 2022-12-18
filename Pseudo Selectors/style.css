@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38ada9;
+    color: #fff;
+}
+
+.main * {
+    padding-top: 5px;
+}
+
+li:first-child {
+    color: blue !important;
+}
+
+li:nth-child(even) {
+    color: rgb(200, 110, 110);
+}
+
+li:nth-child(odd) {
+    color: orange;
+}
+
+li:not(:nth-child(4)) {
+    color: saddlebrown;
+}
+
+li:last-child {
+    color: green;
+}

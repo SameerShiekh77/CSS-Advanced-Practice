@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+:root {
+    --width: 100vw;
+}
+
+.main_div {
+    width: var(--width);
+    padding-top: 100px;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #2980b9;
+    font-size: 5rem;
+}
+
+h1::after {
+    content: "\2605";
+    font-family: "Font Awesome 5 Free";
+    width: calc(var(--width) - 80vw);
+    height: 36px;
+    font-size: 3rem;
+    color: #1abc9c;
+    display: block;
+    margin: 0% auto;
+    border-bottom: 5px solid #3498db;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h1::after {
+        content: "\2605";
+        font-family: "Font Awesome 5 Free";
+        width: calc(var(--width) - 60vw);
+        font-size: 2.5rem;
+    }
+}

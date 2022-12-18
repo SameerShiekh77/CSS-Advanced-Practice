@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: teal;
+}
+
+.main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.center_div {
+    width: 85vw;
+}
+
+p {
+    color: white;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.first_Child::first-letter {
+    color: yellow;
+    font-size: 8rem;
+    float: left;
+    margin: 0 15px 0 0;
+    line-height: 0.6;
+    font-weight: bold;
+}
+
+.first_Child::first-line {
+    color: yellow;
+    font-weight: bold;
+}
